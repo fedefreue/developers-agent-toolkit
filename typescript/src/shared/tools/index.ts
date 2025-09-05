@@ -13,6 +13,7 @@ import { getServicesList } from '@/shared/tools/services/getServicesList';
 // Operations tools
 import { getApiOperationList } from '@/shared/tools/operations/getApiOperationList';
 import { getApiOperationDetails } from '@/shared/tools/operations/getApiOperationDetails';
+import { searchApiOperations } from '@/shared/tools/operations/searchApiOperations';
 
 export const tools = (context: ToolContext): Tool[] => [
   // Services
@@ -28,4 +29,5 @@ export const tools = (context: ToolContext): Tool[] => [
   // API Operations
   getApiOperationList(context),
   getApiOperationDetails(context),
+  searchApiOperations(context),
 ];
